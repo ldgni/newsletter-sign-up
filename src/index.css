@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONTS */
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("./assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("./assets/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MAIN */
+
+main {
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* BUTTON */
+
+button:is(:hover, :focus) {
+  background-image: linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
